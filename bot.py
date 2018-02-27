@@ -1,6 +1,6 @@
 from telegram.ext import Updater
 updater = Updater(token='528744932:AAEPt-yfHBZbNQ9aMIlAUyuMSTz-QilXM6M')
-url = http://api.rasp.nsuem.ru/?controller=Times&action=GetTime&key=80a07cadffa1169625e3d4849bd31e793e05e81a
+url = 'http://api.rasp.nsuem.ru/?controller=Times&action=GetTime&key=80a07cadffa1169625e3d4849bd31e793e05e81a'
 
 dispatcher = updater.dispatcher
 

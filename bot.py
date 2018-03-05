@@ -6,6 +6,7 @@ dispatcher = updater.dispatcher
 
 import logging
 import requests
+import json
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 

@@ -20,5 +20,7 @@ def r4751(bot, update):
 from telegram.ext import CommandHandler
 start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
+r4751_handler = CommandHandler('r4751', r4751)
+dispatcher.add_handler(r4751_handler)
 
 updater.start_polling()

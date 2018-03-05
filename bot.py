@@ -1,6 +1,6 @@
 from telegram.ext import Updater
 updater = Updater(token='528744932:AAEPt-yfHBZbNQ9aMIlAUyuMSTz-QilXM6M')
-url = 'https://api.rasp.nsuem.ru/?controller=Times&action=GetTime&key=80a07cadffa1169625e3d4849bd31e793e05e81a'
+url = 'http://api.rasp.nsuem.ru/?controller=Times&action=GetTime&key=80a07cadffa1169625e3d4849bd31e793e05e81a'
 
 dispatcher = updater.dispatcher
 
@@ -15,7 +15,7 @@ def start(bot, update):
 
 def r4751(bot, update):
 	 response = requests.get(url)
-	 bot.send_message(chat_id=update.message.chat_id, text=response.json())
+	 bot.send_message(chat_id=update.message.chat_id, text=json.dumps(response.json()))
 
 from telegram.ext import CommandHandler
 start_handler = CommandHandler('start', start)
